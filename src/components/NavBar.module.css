@@ -42,3 +42,35 @@
   color: rgb(230, 230, 230);
   text-shadow: 0px 0px 8px #000000, -5px -5px 8px #000000, 5px 5px 8px #000000;
 }
+
+.searchBar {
+  position: relative;
+}
+
+.searchBar::before {
+  content: '';
+  background-image: url('../assets/search_icon.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  width: 1.6rem;
+  height: 1.6rem;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.28rem;
+  z-index: 100;
+}
+
+.searchBarInput {
+  width: 18rem;
+  height: 2.5rem;
+  border-radius: 1.3rem;
+  border: 1px solid rgba(0, 0, 0, 0.39);
+  outline: none;
+  padding: 0 1rem 0 2rem;
+  font-size: 1rem;
+}
+
+.searchBarInput:focus {
+  outline: solid 4px rgba(59, 59, 59, 0.301);
+}
