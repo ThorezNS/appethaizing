@@ -1,11 +1,10 @@
 import styles from './GlobalStyles.module.css';
-import NavBar from './components/NavBar';
+import NavBar from './components/organisms/NavBar';
 
 function App() {
   return (
     <div className={styles}>
       <NavBar />
-      <h1>hello world</h1>
     </div>
   );
 }

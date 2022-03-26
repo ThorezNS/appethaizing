@@ -1,0 +1,35 @@
+.wrapper {
+  position: relative;
+}
+
+.wrapper::before {
+  content: '';
+  background-image: url('../../assets/search_icon.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  width: 1.6rem;
+  height: 1.6rem;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.28rem;
+  z-index: 100;
+}
+
+.input {
+  width: 18rem;
+  height: 2.5rem;
+  border-radius: 1.3rem;
+  border: 1px solid rgba(0, 0, 0, 0.39);
+  outline: none;
+  padding: 0 1rem 0 2rem;
+  font-size: 1rem;
+}
+
+.input:focus {
+  outline: solid 4px rgba(59, 59, 59, 0.301);
+}
+
+.input:focus::placeholder {
+  color: transparent;
+}
