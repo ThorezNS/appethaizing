@@ -4,6 +4,7 @@
   width: 100%;
   height: 30vh;
   min-height: 200px;
+  max-height: 350px;
   background-image: url('../../assets/steak_img.jpg');
   background-position: 0% 60%;
   background-repeat: no-repeat;
@@ -12,4 +13,10 @@
   -webkit-box-shadow: 0px 7px 19px -1px rgba(27, 32, 33, 1);
   -moz-box-shadow: 0px 7px 19px -1px rgba(27, 32, 33, 1);
   box-shadow: 0px 7px 19px -1px rgba(27, 32, 33, 1);
+}
+
+@media screen and (max-width: 1100px) {
+  .navBarContainer {
+    height: 280px;
+  }
 }

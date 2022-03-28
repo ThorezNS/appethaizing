@@ -1,5 +1,6 @@
 .wrapper {
   position: relative;
+  margin: 1rem 0;
 }
 
 .wrapper::before {

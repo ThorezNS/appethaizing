@@ -7,3 +7,9 @@
   height: 3.2rem;
   box-shadow: 0px 0px 8px #000000;
 }
+
+@media screen and (max-width: 570px) {
+  .logo {
+    display: none;
+  }
+}

@@ -1,7 +1,7 @@
 .wrapper {
   margin: 0 0.4rem 0.2rem 0.4rem;
   position: relative;
-  width: 6rem;
+  width: 4.3rem;
   height: 5rem;
   display: flex;
   align-items: flex-end;
@@ -57,4 +57,11 @@
 }
 .snack::before {
   background-image: url('../../assets/snack_icon.png');
+}
+
+@media screen and (max-width: 750px) {
+  .wrapper {
+    margin: 0 0.2rem 0.2rem 0.2rem;
+    width: 4rem;
+  }
 }
