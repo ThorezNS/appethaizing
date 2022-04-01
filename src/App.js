@@ -1,25 +1,22 @@
 import styles from './GlobalStyles.module.css';
 import NavBar from './components/organisms/NavBar';
 import useFetch from './containers/useFetch';
+import RecipeCard from './components/molecules/RecipeCard';
 
 function App() {
+  const KEY = process.env.REACT_APP_API_KEY;
   const { response, isLoading, error } = useFetch(
-    `https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=8`
+    `https://api.spoonacular.com/recipes/random?apiKey=${KEY}&number=2`
   );
 
   return (
     <div className={styles}>
       <NavBar />
-      {isLoading && <h1>LOADING...</h1>}
-      {error && <h1>{error}</h1>}
+      {isLoading && <p>Loading...</p>}
+      {error && <p>{error}</p>}
       {response &&
-        response.recipes.map((e) => {
-          return (
-            <div>
-              <h1 key={e.id}>{e.title}</h1>
-              <img src={e.image} alt="food" />
-            </div>
-          );
+        response.recipes.map((recipe) => {
+          return <RecipeCard key={recipe.id} recipe={recipe} />;
         })}
     </div>
   );
