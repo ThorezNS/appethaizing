@@ -5,7 +5,7 @@
   height: 30vh;
   min-height: 200px;
   max-height: 350px;
-  background-image: url('../../assets/steak_img.jpg');
+  background-image: url('../../../assets/steak_img.jpg');
   background-position: 0% 60%;
   background-repeat: no-repeat;
   background-attachment: fixed;

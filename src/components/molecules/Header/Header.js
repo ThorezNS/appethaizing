@@ -1,7 +1,7 @@
 import styles from './Header.module.css';
-import Logo from '../atoms/Logo';
-import Title from '../atoms/Title';
-import SearchBar from '../atoms/SearchBar';
+import Logo from '../../atoms/Logo/Logo';
+import Title from '../../atoms/Title/Title';
+import SearchBar from '../../atoms/SearchBar/SearchBar';
 
 const Header = () => {
   return (

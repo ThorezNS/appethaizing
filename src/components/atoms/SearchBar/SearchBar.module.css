@@ -5,7 +5,7 @@
 
 .wrapper::before {
   content: '';
-  background-image: url('../../assets/search_icon.png');
+  background-image: url('../../../assets/search_icon.png');
   background-repeat: no-repeat;
   background-size: cover;
   display: block;

@@ -1,7 +1,7 @@
 import styles from './GlobalStyles.module.css';
-import NavBar from './components/organisms/NavBar';
+import NavBar from './components/organisms/NavBar/NavBar';
 import useFetch from './containers/useFetch';
-import RecipeCard from './components/molecules/RecipeCard';
+import RecipeCard from './components/organisms/RecipeCard/RecipeCard';
 
 function App() {
   const KEY = process.env.REACT_APP_API_KEY;

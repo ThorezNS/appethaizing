@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  width: 380px;
+  height: 250px;
+  cursor: pointer;
+  position: relative;
+}
+
+.image {
+  border-radius: 1.2rem;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.wrapper:hover {
+  width: 382px;
+  height: 252px;
+}
+
+.wrapper:hover .image {
+  box-shadow: 0px 0px 8px #000000;
+}

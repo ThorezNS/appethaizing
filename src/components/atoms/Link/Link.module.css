@@ -40,22 +40,22 @@
 }
 
 .entree::before {
-  background-image: url('../../assets/main_icon.png');
+  background-image: url('../../../assets/main_icon.png');
 }
 .breakfast::before {
-  background-image: url('../../assets/breakfast_icon.png');
+  background-image: url('../../../assets/breakfast_icon.png');
 }
 .salad::before {
-  background-image: url('../../assets/salad_icon.png');
+  background-image: url('../../../assets/salad_icon.png');
 }
 .appetizer::before {
-  background-image: url('../../assets/appetizer_icon.png');
+  background-image: url('../../../assets/appetizer_icon.png');
 }
 .dessert::before {
-  background-image: url('../../assets/dessert_icon.png');
+  background-image: url('../../../assets/dessert_icon.png');
 }
 .snack::before {
-  background-image: url('../../assets/snack_icon.png');
+  background-image: url('../../../assets/snack_icon.png');
 }
 
 @media screen and (max-width: 750px) {

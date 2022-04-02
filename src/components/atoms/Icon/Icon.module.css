@@ -1,0 +1,38 @@
+.readyInMinutes,
+.servings,
+.cheap,
+.veryHealthy,
+.glutenFree,
+.vegetarian {
+  margin: 0 0.2rem;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.readyInMinutes {
+  background-image: url('../../../assets/stopwatch.png');
+}
+
+.servings {
+  background-image: url('../../../assets/serve.png');
+}
+
+.cheap {
+  background-image: url('../../../assets/loss.png');
+}
+
+.veryHealthy {
+  background-image: url('../../../assets/heartbeat.png');
+}
+
+.glutenFree {
+  background-image: url('../../../assets/gluten.png');
+}
+
+.vegetarian {
+  background-image: url('../../../assets/vegetarian.png');
+}

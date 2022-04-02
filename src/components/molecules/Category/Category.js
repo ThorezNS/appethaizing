@@ -1,5 +1,5 @@
 import styles from './Category.module.css';
-import Link from '../atoms/Link';
+import Link from '../../atoms/Link/Link';
 
 const Category = () => {
   return (
