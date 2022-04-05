@@ -1,12 +1,19 @@
 import styles from './NavBar.module.css';
 import Header from '../../molecules/Header/Header';
 import Category from '../../molecules/Category/Category';
+import useScrollTop from '../../../containers/useScrollTop';
 
 const NavBar = () => {
+  const { isScrolledTop } = useScrollTop(160);
+
   return (
-    <nav className={styles.navBarContainer}>
-      <Header />
-      <Category />
+    <nav
+      className={`${styles.navBarContainer} ${
+        isScrolledTop ? styles.narrow : styles.thick
+      }`}
+    >
+      <Header isScrolledTop={isScrolledTop} />
+      {!isScrolledTop && <Category />}
     </nav>
   );
 };

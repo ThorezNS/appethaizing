@@ -6,7 +6,7 @@ import RecipeCard from './components/organisms/RecipeCard/RecipeCard';
 function App() {
   const KEY = process.env.REACT_APP_API_KEY;
   const { response, isLoading, error } = useFetch(
-    `https://api.spoonacular.com/recipes/random?apiKey=${KEY}&number=2`
+    `https://api.spoonacular.com/recipes/random?apiKey=${KEY}&number=6`
   );
 
   return (

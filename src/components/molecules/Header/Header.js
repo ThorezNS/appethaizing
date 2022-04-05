@@ -3,11 +3,11 @@ import Logo from '../../atoms/Logo/Logo';
 import Title from '../../atoms/Title/Title';
 import SearchBar from '../../atoms/SearchBar/SearchBar';
 
-const Header = () => {
+const Header = ({ isScrolledTop }) => {
   return (
     <header className={styles.header}>
       <Logo />
-      <Title title="appethaizing" />
+      {!isScrolledTop && <Title title="appethaizing" />}
       <SearchBar placeholder="Find a recipe..." />
     </header>
   );
