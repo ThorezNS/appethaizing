@@ -6,7 +6,7 @@ const RecipeCard = ({ recipe }) => {
   return (
     <div className={styles.wrapper}>
       <Title card title={recipe.title} />
-      <img src={recipe.image} alt="food" className={styles.image} />
+      <img src={recipe.image} alt={recipe.title} className={styles.image} />
       <CardIconsContainer recipe={recipe} />
     </div>
   );

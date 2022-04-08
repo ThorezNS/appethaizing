@@ -17,7 +17,6 @@
 }
 
 .wrapper:hover {
-  width: 382px;
-  height: 252px;
   box-shadow: 0px 0px 8px #000000;
+  opacity: 0.9;
 }

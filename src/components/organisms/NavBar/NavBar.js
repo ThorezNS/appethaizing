@@ -4,7 +4,7 @@ import Category from '../../molecules/Category/Category';
 import useScrollTop from '../../../containers/useScrollTop';
 
 const NavBar = () => {
-  const { isScrolledTop } = useScrollTop(160);
+  const { isScrolledTop } = useScrollTop(70);
 
   return (
     <nav
