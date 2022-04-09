@@ -7,7 +7,7 @@ const RecipeCard = ({ recipe }) => {
     <div className={styles.wrapper}>
       <Title card title={recipe.title} />
       <img src={recipe.image} alt={recipe.title} className={styles.image} />
-      <CardIconsContainer recipe={recipe} />
+      {recipe.readyInMinutes && <CardIconsContainer recipe={recipe} />}
     </div>
   );
 };

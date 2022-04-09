@@ -1,6 +1,7 @@
 import useFetch from '../../containers/useFetch';
+import TheFetchMessage from '../atoms/TheFetchMessage/TheFetchMessage';
+import CardsContainer from '../organisms/CardsContainer/CardsContainer';
 import RecipeCard from '../organisms/RecipeCard/RecipeCard';
-import styles from './Home.module.css';
 
 const Home = () => {
   const KEY = process.env.REACT_APP_API_KEY;
@@ -9,14 +10,13 @@ const Home = () => {
   );
 
   return (
-    <div className={response ? styles.container : styles.message}>
-      {isLoading && <p className={styles.message}>Loading...</p>}
-      {error && <p className={styles.message}>{error}</p>}
+    <CardsContainer page="home">
+      <TheFetchMessage isLoading={isLoading} error={error} />
       {response &&
         response.recipes.map((recipe) => {
           return <RecipeCard key={recipe.id} recipe={recipe} />;
         })}
-    </div>
+    </CardsContainer>
   );
 };
 

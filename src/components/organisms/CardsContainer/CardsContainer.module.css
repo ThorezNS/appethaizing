@@ -1,27 +1,20 @@
 .container {
-  margin: 360px 10vw 150px 10vw;
+  margin: 360px 10vw 2.2rem 10vw;
   display: grid;
   grid-template-columns: repeat(auto-fill, 380px);
   grid-template-rows: repeat(auto-fill, 250px);
-  grid-gap: 2.2rem;
+  column-gap: 1.8rem;
+  row-gap: 2.8rem;
   justify-content: center;
   align-items: center;
   position: relative;
 }
 
-.message {
-  margin-top: 220px;
-  font-size: 1.8rem;
-  display: flex;
-  justify-content: center;
-}
-
 .container::before {
-  content: 'get your random recipe';
   width: 20rem;
   height: 1rem;
   position: absolute;
-  top: -50px;
+  top: -2.1rem;
   left: 1.6rem;
   font-size: 1.2rem;
   text-transform: capitalize;
@@ -31,10 +24,14 @@
 .container::after {
   content: '';
   position: absolute;
-  top: -50px;
+  top: -2.1rem;
   left: 0;
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 20%;
   background-color: rgb(189, 189, 189);
+}
+
+.home::before {
+  content: 'get your random recipe';
 }

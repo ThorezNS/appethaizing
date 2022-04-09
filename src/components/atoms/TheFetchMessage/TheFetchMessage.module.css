@@ -1,5 +1,7 @@
 .message {
-  margin-top: 220px;
+  position: absolute;
+  top: 0;
+  left: 0;
   font-size: 1.8rem;
   display: flex;
   justify-content: center;
