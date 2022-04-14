@@ -1,8 +1,13 @@
 import styles from './Logo.module.css';
 import logo from '../../../assets/logo.png';
+import { Link } from 'react-router-dom';
 
 const Logo = () => {
-  return <img className={styles.logo} src={logo} alt="appethaizing logo" />;
+  return (
+    <Link to="/">
+      <img className={styles.logo} src={logo} alt="appethaizing logo" />;
+    </Link>
+  );
 };
 
 export default Logo;

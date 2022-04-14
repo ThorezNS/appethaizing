@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './Title.module.css';
 
 const Title = ({ title, card }) => {
@@ -6,7 +7,10 @@ const Title = ({ title, card }) => {
       {card ? (
         <h3 className={styles.card}>{title}</h3>
       ) : (
-        <h1 className={styles.main}>{title}</h1>
+        <Link to="/">
+          {' '}
+          <h1 className={styles.main}>{title}</h1>{' '}
+        </Link>
       )}
     </>
   );
