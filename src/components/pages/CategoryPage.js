@@ -1,9 +1,12 @@
+import { useParams } from 'react-router-dom';
 import CardsContainer from '../organisms/CardsContainer/CardsContainer';
 
-const CategoryPage = ({ name }) => {
+const CategoryPage = () => {
+  const { id } = useParams();
+
   return (
-    <CardsContainer page={name}>
-      <div>{name}</div>
+    <CardsContainer page={id}>
+      <div>{id}</div>
     </CardsContainer>
   );
 };

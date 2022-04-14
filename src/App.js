@@ -11,18 +11,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/entree" element={<CategoryPage name="entree" />} />
-          <Route
-            path="/breakfast"
-            element={<CategoryPage name="breakfast" />}
-          />
-          <Route path="/salad" element={<CategoryPage name="salad" />} />
-          <Route
-            path="/appetizer"
-            element={<CategoryPage name="appetizer" />}
-          />
-          <Route path="/dessert" element={<CategoryPage name="dessert" />} />
-          <Route path="/snack" element={<CategoryPage name="snack" />} />
+          <Route path="/:id" element={<CategoryPage />} />
         </Routes>
       </BrowserRouter>
     </div>
