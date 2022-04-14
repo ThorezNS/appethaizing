@@ -64,3 +64,12 @@
     width: 4rem;
   }
 }
+
+.active {
+  font-size: 1.1rem;
+}
+
+.active::before {
+  background-color: #e4e4e488;
+  outline: solid 1px #ffffff;
+}

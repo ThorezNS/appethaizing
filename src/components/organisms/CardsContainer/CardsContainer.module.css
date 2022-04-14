@@ -17,7 +17,7 @@
   height: 1rem;
   position: absolute;
   top: -2.1rem;
-  left: 3.6rem;
+  left: 3.8rem;
   font-size: 1.2rem;
   text-transform: capitalize;
   font-weight: 400;
@@ -36,4 +36,28 @@
 
 .home::before {
   content: 'get your random recipe';
+}
+
+.entree::before {
+  content: 'get your entree recipe';
+}
+
+.breakfast::before {
+  content: 'get your breakfast recipe';
+}
+
+.salad::before {
+  content: 'get your salad recipe';
+}
+
+.appetizer::before {
+  content: 'get your appetizer recipe';
+}
+
+.dessert::before {
+  content: 'get your dessert recipe';
+}
+
+.snack::before {
+  content: 'get your snack recipe';
 }

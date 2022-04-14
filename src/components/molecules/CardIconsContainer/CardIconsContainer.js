@@ -1,5 +1,5 @@
 import Icon from '../../atoms/Icon/Icon';
-import IconText from '../../atoms/Link/IconText/IconText';
+import IconText from '../../atoms/IconText/IconText';
 import TranslucentBackground from '../TranslucentBackground/TranslucentBackground';
 import styles from './CardIconsContainer.module.css';
 
