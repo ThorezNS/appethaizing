@@ -8,7 +8,7 @@ const Link = ({ text }) => {
   return (
     <div className={styles.wrapper}>
       <NavLink
-        to={`/${text}`}
+        to={`/category/${text}`}
         className={({ isActive }) => (isActive ? activeLinkStyle : linkStyle)}
       >
         {text}

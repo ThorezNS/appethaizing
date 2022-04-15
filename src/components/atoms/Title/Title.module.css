@@ -12,8 +12,15 @@
   font-size: 1.4rem;
   color: #e4e4e4;
   text-shadow: 0px 0px 8px #000000, -5px -5px 8px #000000, 5px 5px 8px #000000;
+  text-transform: capitalize;
   font-weight: 400;
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.details {
+  color: #000000;
+  margin: 0.8rem 0;
+  font-size: 1.4rem;
 }

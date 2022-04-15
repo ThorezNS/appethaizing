@@ -7,7 +7,7 @@ const Header = ({ isScrolledTop }) => {
   return (
     <header className={styles.header}>
       <Logo />
-      {!isScrolledTop && <Title title="appethaizing" />}
+      {!isScrolledTop && <Title main title="appethaizing" />}
       <SearchBar placeholder="Find a recipe..." />
     </header>
   );
