@@ -1,0 +1,17 @@
+.container {
+  margin: 1rem 0;
+}
+
+.quantityAndTime {
+  font-size: 1.3rem;
+}
+
+.wrapper {
+  font-size: 1rem;
+}
+
+.wrapper > p::before {
+  content: '\2714  ';
+  font-size: 1.1rem;
+  color: rgb(201, 201, 201);
+}

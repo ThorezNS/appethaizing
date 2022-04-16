@@ -2,6 +2,7 @@ import useFetch from '../../../containers/useFetch';
 import FoodPicture from '../../atoms/FoodPicture/FoodPicture';
 import TheFetchMessage from '../../atoms/TheFetchMessage/TheFetchMessage';
 import Title from '../../atoms/Title/Title';
+import ShortRecipeInfo from '../../molecules/ShortRecipeInfo/ShortRecipeInfo';
 import styles from './GeneralRecipeInformation.module.css';
 
 const GeneralRecipeInformation = ({ id }) => {
@@ -20,6 +21,7 @@ const GeneralRecipeInformation = ({ id }) => {
             {' '}
             <FoodPicture src={response.image} alt={response.title} />{' '}
           </div>
+          <ShortRecipeInfo recipe={response} />
         </>
       )}
     </div>

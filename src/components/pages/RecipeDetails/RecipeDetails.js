@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import GeneralRecipeInformation from '../../molecules/GeneralRecipeInformation/GeneralRecipeInformation';
+import GeneralRecipeInformation from '../../organisms/GeneralRecipeInformation/GeneralRecipeInformation';
 import styles from './RecipeDetails.module.css';
 
 const RecipeDetails = () => {
