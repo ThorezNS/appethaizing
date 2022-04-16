@@ -14,3 +14,15 @@
   box-shadow: 0px 0px 8px #000000;
   opacity: 0.9;
 }
+
+@media screen and (max-width: 1235px) and (min-width: 1085px) {
+  .wrapper {
+    width: 340px;
+  }
+}
+
+@media screen and (max-width: 822px) and (min-width: 730px) {
+  .wrapper {
+    width: 340px;
+  }
+}
