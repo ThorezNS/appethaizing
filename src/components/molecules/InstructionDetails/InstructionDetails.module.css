@@ -1,0 +1,8 @@
+.necessity {
+  display: flex;
+  flex-direction: row;
+}
+
+.step {
+  margin: 0.8rem 0;
+}
