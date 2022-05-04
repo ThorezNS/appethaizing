@@ -15,3 +15,9 @@
   font-size: 1.1rem;
   color: rgb(201, 201, 201);
 }
+
+@media screen and (max-width: 1440px) {
+  .container {
+    margin: 4rem 1rem 2rem 1rem;
+  }
+}

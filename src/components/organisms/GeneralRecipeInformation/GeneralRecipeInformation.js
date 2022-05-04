@@ -16,10 +16,9 @@ const GeneralRecipeInformation = ({ id }) => {
       <TheFetchMessage isLoading={isLoading} error={error} />
       {response && (
         <>
-          <Title details title={response.title} />
-          <div className={styles.imageWrapper}>
-            {' '}
-            <FoodPicture src={response.image} alt={response.title} />{' '}
+          <div>
+            <Title details title={response.title} />
+            <FoodPicture src={response.image} alt={response.title} />
           </div>
           <ShortRecipeInfo recipe={response} />
         </>
