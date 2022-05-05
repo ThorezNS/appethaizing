@@ -18,8 +18,8 @@ const RecipeInstructions = ({ id }) => {
           return (
             <div className={styles.instruction} key={index}>
               <Title title={instruction.name} details />
-              {instruction.steps.map((step) => {
-                return <InstructionDetails details={step} key={step.number} />;
+              {instruction.steps.map((step, subindex) => {
+                return <InstructionDetails details={step} key={subindex} />;
               })}
             </div>
           );

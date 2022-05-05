@@ -1,19 +1,18 @@
 import { useParams } from 'react-router-dom';
+import CardsContainer from '../organisms/CardsContainer/CardsContainer';
 import useFetch from '../../containers/useFetch';
 import TheFetchMessage from '../atoms/TheFetchMessage/TheFetchMessage';
-import CardsContainer from '../organisms/CardsContainer/CardsContainer';
 import RecipeCard from '../organisms/RecipeCard/RecipeCard';
 
-const CategoryPage = () => {
-  const { category } = useParams();
+const FoundRecipes = () => {
+  const { found } = useParams();
   const KEY = process.env.REACT_APP_API_KEY;
-  const type = category === 'entree' ? 'main course' : category;
   const { response, isLoading, error } = useFetch(
-    `https://api.spoonacular.com/recipes/complexSearch?apiKey=${KEY}&type=${type}&number=50`
+    `https://api.spoonacular.com/recipes/complexSearch?apiKey=${KEY}&query=${found}&number=50`
   );
 
   return (
-    <CardsContainer page={category}>
+    <CardsContainer page={'found'}>
       <TheFetchMessage isLoading={isLoading} error={error} />
       {response &&
         response.results.map((recipe) => {
@@ -23,4 +22,4 @@ const CategoryPage = () => {
   );
 };
 
-export default CategoryPage;
+export default FoundRecipes;

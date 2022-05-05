@@ -62,6 +62,14 @@
   content: 'get your snack recipe';
 }
 
+.found::before {
+  content: 'your found recipes';
+}
+
+.not-found::before {
+  content: 'oops the phrase cannot be found...';
+}
+
 @media screen and (max-width: 1379px) {
   .container {
     padding: 0 0.5rem;

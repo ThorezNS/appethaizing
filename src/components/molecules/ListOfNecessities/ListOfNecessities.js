@@ -6,8 +6,8 @@ const ListOfNecessities = ({ object, necessitiesName }) => {
       {object[necessitiesName].length ? (
         <div className={styles.container}>
           <p>{`${necessitiesName.toUpperCase()}:`}</p>
-          {object[necessitiesName].map((necessity) => {
-            return <p key={necessity.id}>{`- ${necessity.name}`}</p>;
+          {object[necessitiesName].map((necessity, index) => {
+            return <p key={index}>{`- ${necessity.name}`}</p>;
           })}
         </div>
       ) : null}
