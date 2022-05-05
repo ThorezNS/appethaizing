@@ -5,6 +5,7 @@ import Home from './components/pages/Home';
 import CategoryPage from './components/pages/CategoryPage';
 import RecipeDetails from './components/pages/RecipeDetails/RecipeDetails';
 import FoundRecipes from './components/pages/FoundRecipes';
+import NotFound from './components/pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/category/:category" element={<CategoryPage />} />
           <Route path="/details/:id" element={<RecipeDetails />} />
           <Route path="/found/:found" element={<FoundRecipes />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </div>
