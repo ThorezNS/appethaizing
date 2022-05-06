@@ -12,64 +12,6 @@
   position: relative;
 }
 
-.container::before {
-  width: 20rem;
-  height: 1rem;
-  position: absolute;
-  top: -2.1rem;
-  left: 3.8rem;
-  font-size: 1.2rem;
-  text-transform: capitalize;
-  font-weight: 400;
-}
-
-.container::after {
-  content: '';
-  position: absolute;
-  top: -2.1rem;
-  left: 2rem;
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 20%;
-  background-color: rgb(189, 189, 189);
-}
-
-.home::before {
-  content: 'get your random recipe';
-}
-
-.entree::before {
-  content: 'get your entree recipe';
-}
-
-.breakfast::before {
-  content: 'get your breakfast recipe';
-}
-
-.salad::before {
-  content: 'get your salad recipe';
-}
-
-.appetizer::before {
-  content: 'get your appetizer recipe';
-}
-
-.dessert::before {
-  content: 'get your dessert recipe';
-}
-
-.snack::before {
-  content: 'get your snack recipe';
-}
-
-.found::before {
-  content: 'your found recipes';
-}
-
-.not-found::before {
-  content: 'oops the phrase cannot be found...';
-}
-
 @media screen and (max-width: 1379px) {
   .container {
     padding: 0 0.5rem;

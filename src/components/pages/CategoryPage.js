@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import useFetch from '../../containers/useFetch';
 import TheFetchMessage from '../atoms/TheFetchMessage/TheFetchMessage';
+import Title from '../atoms/Title/Title';
 import CardsContainer from '../organisms/CardsContainer/CardsContainer';
 import RecipeCard from '../organisms/RecipeCard/RecipeCard';
 
@@ -13,7 +14,8 @@ const CategoryPage = () => {
   );
 
   return (
-    <CardsContainer page={category}>
+    <CardsContainer>
+      <Title title={`get your ${category} recipe`} heading />
       <TheFetchMessage isLoading={isLoading} error={error} />
       {response &&
         response.results.map((recipe) => {

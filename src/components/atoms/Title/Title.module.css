@@ -24,3 +24,25 @@
   margin: 0.8rem 0;
   font-size: 1.4rem;
 }
+
+.heading {
+  width: 20rem;
+  height: 1rem;
+  position: absolute;
+  top: -2.8rem;
+  left: 8rem;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.heading::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -2rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 20%;
+  background-color: rgb(189, 189, 189);
+}

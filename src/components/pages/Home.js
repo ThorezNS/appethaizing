@@ -1,6 +1,7 @@
 import useFetch from '../../containers/useFetch';
 import Curiosity from '../atoms/Curiosity/Curiosity';
 import TheFetchMessage from '../atoms/TheFetchMessage/TheFetchMessage';
+import Title from '../atoms/Title/Title';
 import CardsContainer from '../organisms/CardsContainer/CardsContainer';
 import RecipeCard from '../organisms/RecipeCard/RecipeCard';
 
@@ -11,7 +12,8 @@ const Home = () => {
   );
 
   return (
-    <CardsContainer page="home">
+    <CardsContainer>
+      <Title title={`get your random recipe`} heading />
       <TheFetchMessage isLoading={isLoading} error={error} />
       {response &&
         response.recipes.map((recipe) => {
